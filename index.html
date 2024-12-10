@@ -65,8 +65,7 @@
             <h1>Anfal Tif</h1>
             <img src="https://i.pinimg.com/736x/06/98/9b/06989b9df22c1d760e68ead7df88c86c.jpg" alt="Logo Example 2">
         </div>
-        <!-- تعديل هنا ليشمل Formspree -->
-        <form action="https://formspree.io/f/mnnqyzkg" method="post" enctype="multipart/form-data">
+        <form action="https://formspree.io/f/mnnqyzkg" method="post">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name">
 
@@ -93,8 +92,9 @@
             <label for="keywords">Keywords Describing Your Work:</label>
             <textarea id="keywords" name="keywords" placeholder="Modern, Innovative, Natural, etc."></textarea>
 
-            <label for="examples">Do You Have Logo Examples You Like? (Upload 3 images):</label>
-            <input type="file" id="examples" name="examples[]" multiple>
+            <!-- تعديل الحقل لطلب الرابط بدلاً من رفع الصور -->
+            <label for="examples">Do You Have Logo Examples You Like? (Enter links to images):</label>
+            <input type="text" id="examples" name="examples" placeholder="Enter the links to your logo examples">
 
             <label for="colors">Preferred Colors:</label>
             <input type="text" id="colors" name="colors" placeholder="Enter preferred colors">
@@ -123,8 +123,8 @@
             <label for="file_types">Preferred File Types:</label>
             <input type="text" id="file_types" name="file_types" placeholder="PNG, JPEG, etc.">
 
-            <label for="ideas">Do You Have Any Ideas or Inspirations? (Upload 3 images):</label>
-            <input type="file" id="ideas" name="ideas[]" multiple>
+            <label for="ideas">Do You Have Any Ideas or Inspirations? (Enter links to images):</label>
+            <input type="text" id="ideas" name="ideas" placeholder="Enter the links to your ideas">
 
             <label for="final_price">Final Price:</label>
             <input type="number" id="final_price" name="final_price" placeholder="Enter final price" required>
